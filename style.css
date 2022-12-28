@@ -1,0 +1,71 @@
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+
+
+img {
+
+    display: block;
+    margin-left: 320px;
+    height: 500px;
+    width: 350px;
+    padding-top: 50px;
+
+}
+body {
+
+    background-image: url('boulefond.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+}
+
+.centered {
+
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title {
+
+    color: rgb(10, 126, 91);
+    display: flex;
+    justify-content: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }

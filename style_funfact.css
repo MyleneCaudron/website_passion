@@ -1,0 +1,68 @@
+body {
+    background-image: url('boulefond.png');
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: initial;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+}
+
+.centered {
+
+    display: flex;
+    flex-direction:column ;
+    align-items: center; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-spacing: 0px 1px;
+}
+
+.title {
+    color: rgb(10, 126, 91);
+    display: flex;
+    flex-direction:column ;
+    align-items: center; 
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+h4 {
+    color: rgb(50, 112, 194);
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #04AA6D;
+  }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Boules à neige</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="myscript.js"></script>
+
+</head>
+  <body>
+  
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="Histoire.html">Histoire</a></li>
+    <li><a href="Funfacts.html">Funfacts</a></li>
+    <li><a href="témoignage.html">Témoignage</a></li>
+    <li><a href="form.html">Contact</a></li>
+  </ul>
+
+
+
+    <div class="title">
+        <h1 style="font-family: 'Times New Roman', Times, serif">Les boules à neige</h1>
+      </div>
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="boule1.jpg" alt="boule à neige">
+  <img class="mySlides" src="boule2.jpg" alt="boule à neige">
+  <img class="mySlides" src="boule3.jpg" alt="boule à neige">
+  <img class="mySlides" src="boule4.jpg" alt="boule à neige">
+  <img class="mySlides" src="boule5.jpg" alt="boule à neige">
+  <img class="mySlides" src="boule6.jpg" alt="boule à neige">
+  <img class="mySlides" src="boule7.jpg" alt="boule à neige">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+<footer>
+  <p>© 2022 Mylène</p>
+</footer>
+</body>
+</html>
